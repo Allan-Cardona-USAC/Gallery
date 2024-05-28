@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+     background-color: #f2f2f2f2; 
+    
+}
+.gallery{
+    width: 90%;
+    max-width: 1200px;
+    /* para todo lo que salga de ese elemento se esconda */
+    overflow: hidden;
+    /* centrar la galeria */
+    margin:  auto;
+    padding: 60px 0;
+}
+.gallery__title{
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+.gallery__container{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.gallery__picture{
+    flex-basis: 350px;
+    flex-grow: 1;
+}
+.gallery__img{
+    width: 100%;
+    height: 100%;
+    /* objet-fit realizara que las imagenes no pierdan calidad */
+    object-fit: cover;
+}
